@@ -1,0 +1,484 @@
+/* Reset dan base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Login Page Styles */
+
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #916d34 0%, #382b0f 100%);
+    padding: 20px;
+    gap: 200px;
+}
+.gambar img {
+    width: 550px;
+    height: 550px;
+    border-radius: 5%;
+}
+.login-container {
+    gap: 30px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-form {
+    
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.input-with-icon input:focus {
+    border-color: #4d588b;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background: #a78445;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn-login:hover {
+    background: #84612d;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    color: #888;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-social:hover {
+    background: #f9f9f9;
+    border-color: #ccc;
+}
+
+.btn-google {
+    color: #555;
+}
+
+.btn-facebook {
+    color: #1877F2;
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #394991;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background: #775c1a;
+    color: white;
+    padding: 20px 0;
+    transition: all 0.3s;
+}
+
+.logo {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #82551a;
+    margin-bottom: 20px;
+}
+
+.logo h2 {
+    color: #ecf0f1;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 5px;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 15px;
+}
+
+.sidebar-nav a:hover, .sidebar-nav a.active {
+    background: #4f3c13;
+    color: #ecf0f1;
+    border-left: 4px solid #ae7f1a;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background: #f8f9fa;
+    overflow-x: auto;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.page-header h1 {
+    color: #3f5c7b;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.user-info {
+    color: #666;
+    font-size: 15px;
+}
+
+/* Summary Cards */
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 4px solid #5a4111;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: rgba(102, 126, 234, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 24px;
+    color: #b08432;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.card-content p {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    background: #70540e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-primary:hover {
+    background: #9d7724;
+}
+
+.action-section {
+    margin-top: 30px;
+}
+
+/* Product Table */
+.table-container {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.product-table th, .product-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.product-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 15px;
+}
+
+.product-table tr:last-child td {
+    border-bottom: none;
+}
+
+.product-table tr:hover {
+    background: #f8f9fa;
+}
+
+/* Stock Icons */
+.stock-icon {
+    font-size: 18px;
+}
+
+/* Action Buttons */
+.btn-edit, .btn-delete {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 8px;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-edit {
+    background: #8a631c;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #a27d21;
+    transform: translateY(-2px);
+}
+
+.btn-delete {
+    background: #8a631c;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #a27d21;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        padding: 15px 0;
+    }
+    
+    .sidebar-nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sidebar-nav a {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 13px;
+        padding: 10px 5px;
+        text-align: center;
+    }
+    
+    .sidebar-nav a.active {
+        border-left: none;
+        border-bottom: 4px solid #b07c1b;
+    }
+    
+    .logo {
+        text-align: center;
+        padding: 0 10px 15px;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        padding: 30px 25px;
+    }
+    
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .product-table {
+        font-size: 14px;
+    }
+    
+    .product-table th, .product-table td {
+        padding: 12px 15px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - UTS Pemrograman Web 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Home Coffee </h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="products.html"><i class="fas fa-box"></i> Data Produk</a></li>
+                    <li><a href="#" id="logoutLink"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="page-header">
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                </div>
+            </header>
+
+            <div class="summary-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Total Products</h3>
+                        <p id="totalProducts">120</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Total Sales</h3>
+                        <p id="totalSales">85</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Total Revenue</h3>
+                        <p id="totalRevenue">Rp 12.500.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-section">
+                <a href="products.html" class="btn-primary">Lihat Data Produk</a>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/sweetalert.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
