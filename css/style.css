@@ -462,23 +462,99 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
 @media (max-width: 768px) {
-    .login-form {
-        padding: 30px 25px;
-    }
-    
-    .page-header {
+
+    /* Ubah layout login jadi kolom */
+    .login-body {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 15px;
+        gap: 20px; /* jarak antara gambar & form */
+        min-height: 100vh;
+    }
+
+    .gambar {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* horizontal center */
+        align-items: center;     /* vertical center jika dibutuhkan */
+    }
+
+    /* Gambar mengecil otomatis & di tengah */
+    .gambar img {
+        width: 80%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 12px;
     }
     
-    .product-table {
+
+    /* Form tampil lebih compact */
+    .login-container {
+        width: 100%;
+        max-width: 380px;
+        padding: 0;
+    }
+
+    .login-form {
+        padding: 20px 18px;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+
+    .login-form h1 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .input-with-icon input {
+        padding: 10px 12px 10px 40px;
         font-size: 14px;
     }
-    
-    .product-table th, .product-table td {
-        padding: 12px 15px;
+
+    .btn-login {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .social-login {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .btn-social {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .divider {
+        margin: 15px 0;
+    }
+
+    .signup-link {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .login-form {
+        padding: 18px 15px;
+    }
+
+    .gambar img {
+        width: 75%;
+        max-width: 240px;
+    }
+
+    .btn-login,
+    .btn-social {
+        padding: 10px;
     }
 }
